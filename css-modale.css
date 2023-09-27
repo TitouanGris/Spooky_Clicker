@@ -1,3 +1,6 @@
+body {
+  cursor: url(Images/click.png), pointer;;
+}
 
 #modale {
     visibility: hidden;
