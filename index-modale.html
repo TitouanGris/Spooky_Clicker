@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css-modale.css">
+    <title>modale</title>
+</head>
+
+<body>
+    <!-- Partie Règles HTML-->
+    <button onclick="modaleopen()">Rules</button>
+    <div id="rules">
+        <button onclick="modaleclose()"> Close</button>
+        <h3>Rules</H3>
+        <p>
+        <ul>
+            <li>Prepare as many Pumpkin as possible by clicking or touching the giant Pumpkin as quickly as possible.
+            </li>
+            <br>
+            <li>s soon as you have enough Pumpkin, go to the store and use them to buy upgrades and scream even more
+            </li>
+            <li>The principle of its game, entirely browser-based (meaning it requires nothing other than your internet
+                browser to play), is to produce Pumpkin... infinitely !</li>
+        </ul>
+        </p>
+    </div>
+
+
+    <!-- Partie contactez-nous HTML-->
+    <button onclick="modaleopen2()">Contact Us</button>
+    <div id="contact">
+        <button  onclick="modaleclose2()"> Close</button>
+        <h3>contact us</h3>
+        <form class="contenu">
+            <h2>Leave your message</h2>
+            <div>
+                <label for="name">Name</label>
+                <br>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <br>
+                <input type="email" id="email">
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <br>
+                <textarea id="message" rows="10"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="js-modale.js"> </script>
+</body>
+
+</html>
