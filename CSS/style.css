@@ -33,7 +33,7 @@ main {
     width: 95%;
 }
 
-img {
+.shop_img {
     width: 50px;
 }
 
@@ -128,4 +128,88 @@ p.level_number{
     .shop_item {
         width : 100%;
     }
+}
+
+
+.footer {
+
+    width: 100%;
+    border-left: 8px;
+    border-right: 8px;
+    position: fixed;
+    bottom:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111c26;
+    color: white;
+    height: 25px;
+
+}
+
+.footer a {
+
+    text-decoration: none;
+    color: white;
+
+}
+
+.footer .society {
+
+    width: 33%;
+    text-align: center;
+
+}
+
+.social {
+
+    width: 33%;
+    padding-left: 8px;
+    display: flex;
+    justify-content: start;
+}
+
+.footer .logo {
+
+    width: 33%;
+    padding-right: 8px;
+    display: flex;
+    justify-content: end;
+
+}
+
+.footer .logo .logoImage {
+
+    width: 5%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.social img {
+
+    width: 20px;
+    height: 20px;
+    padding-right: 4px;
+
+}
+
+.discord{
+
+    display: flex;
+    align-content: center;
+
+}
+
+.twitter{
+
+    display: flex;
+    align-content: center;
+}
+
+.tumblr{
+
+    display: flex;
+    align-content: center;  
 }
