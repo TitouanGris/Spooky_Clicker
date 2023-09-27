@@ -8,8 +8,6 @@ html * {
 .footer {
 
     width: 100%;
-    border-left: 8px;
-    border-right: 8px;
     position: fixed;
     bottom:0;
     display: flex;
@@ -17,7 +15,8 @@ html * {
     align-items: center;
     background-color: #111c26;
     color: white;
-    height: 25px;
+    height: 30px;
+
 
 }
 
@@ -30,14 +29,14 @@ html * {
 
 .footer .society {
 
-    width: 33%;
+    width: 33vw;
     text-align: center;
 
 }
 
 .social {
 
-    width: 33%;
+    width: 33vw;
     padding-left: 8px;
     display: flex;
     justify-content: start;
@@ -45,7 +44,7 @@ html * {
 
 .footer .logo {
 
-    width: 33%;
+    width: 33vw;
     padding-right: 8px;
     display: flex;
     justify-content: end;
@@ -69,22 +68,16 @@ html * {
 
 }
 
-.discord{
-
-    display: flex;
-    align-content: center;
-
-}
-
-.twitter{
+.discord, .twitter, .tumblr{
 
     display: flex;
     align-content: center;
 }
 
-.tumblr{
+.society img{
 
-    display: flex;
-    align-content: center;
+    width: 20px;
+    height: 20px;
+    padding-right: 4px;
     
 }
