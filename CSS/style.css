@@ -141,7 +141,7 @@ p.level_number{
     align-items: center;
     background-color: #111c26;
     color: white;
-    height: 30px;
+    height: 35px;
 
 
 }
@@ -156,7 +156,9 @@ p.level_number{
 .footer .society {
 
     width: 33vw;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -165,7 +167,8 @@ p.level_number{
     width: 33vw;
     padding-left: 8px;
     display: flex;
-    justify-content: start;
+    align-items: baseline;
+
 }
 
 .footer .logo {
@@ -177,33 +180,24 @@ p.level_number{
 
 }
 
-.footer .logo .logoImage {
-
-    width: 5%;
-    height: 5%;
-    display: flex;
-    align-items: center;
-    
-}
-
-.social img {
-
-    width: 20px;
-    height: 20px;
-    padding-right: 4px;
-
-}
-
 .discord, .twitter, .tumblr{
 
     display: flex;
-    align-content: center;
+    align-items: center;
+    padding-right: 8px;
+    height: 50px;
+
 }
 
 .society img{
 
-    width: 20px;
+    width: 25px;
     height: 20px;
-    padding-right: 4px;
+    margin-right: 8px;
     
+}
+
+.discord img, .twitter img, .tumblr img{
+    padding: 8px;
+    width: 50%;
 }
