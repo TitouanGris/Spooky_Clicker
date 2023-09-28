@@ -252,7 +252,6 @@ p.level_number{
     width: 100%;
     border-left: 8px;
     border-right: 8px;
-    position: fixed;
     bottom:0;
     display: flex;
     justify-content: space-between;
