@@ -31,7 +31,7 @@ nav{
     margin: 0 10px;
     background-color: rgba(242, 116, 5, 1);
     padding: 5%;
-    border-radius: 20%;
+    border-radius: 10%;
     font-family: 'Ghoulish', sans-serif;
     
 }
@@ -63,6 +63,7 @@ background-color: white;
     align-items: center;
     padding-left: 40px;
   }
+
 .picture-click img{
     height:25em;
     margin-top: 20px;
@@ -90,6 +91,9 @@ background-color: white;
 }
   body{
     background-color: #0B090A;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
 
 main {
@@ -100,9 +104,30 @@ main {
 .shop {
     width : 90%;
     display: flex;
-    flex-wrap: wrap;
-    gap: 2%;
+    flex-direction: column;
     font-family: 'Roboto';
+}
+#shop_title {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    color: #f0f0f0;
+    justify-content: center;
+    align-items: center;
+    background-color: #111c26;
+    border-radius: 10px;
+}
+
+#shop_title p {
+    font-size: clamp(1rem, 2vw, 2.5rem);
+    font-weight: bold;
+}
+
+#shop_boosters{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1vh 0 1vh 0;
 }
 
 .shop_item {
@@ -112,7 +137,7 @@ main {
     align-content: center;
     background-color: #111c26;
     border-radius: 10px;
-    box-shadow: 5px 5px 18px 5px #919191;
+    box-shadow: 5px 5px 18px 5px #0b0b0b;
     margin-bottom: 10px;
 }
 .shop_item_content{
@@ -235,6 +260,7 @@ p.level_number{
     background-color: #111c26;
     color: white;
     height: 25px;
+    margin-top: auto;
 
 }
 
