@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS\style.css">
-    <link rel="script" href="JS\script.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- Mettre meta pour informations site web et référencement -->
     <title>Spooky Clicker</title>
- 
+
 </head>
+
 <body>
     <header>
         <!-- Barre de naviguation avec règles, shop et logo -->
         <nav>
-           
-            <img class = "logo-titles" src="Images\logov2.png" alt="spookie clicker">     
+
+            <img class="logo-titles" src="Images\logov2.png" alt="spookie clicker">
             <ul class="navbar">
-           
+
                 <li class="rules"><a href="#">Regles</a></li>
                 <li class="contact"><a href="#">Contact</a></li>
             </ul>
             <div class="picture-logo">
             </div>
-            
+
         </nav>
     </header>
     <!-- PARTIE PRINCIPALE DE LA PAGE -->
     <section class="top-body">
         <div class="picture-background">
             <div class="first-counter">
-                <p>0 PUMPCLICK</p>
+                <p>
+                    <span id="nombreClics">0</span> Pumplick
+                </p>
             </div>
             <div class="picture-click" img>
-                <img src="Images\pumpkin.png" alt="pumpkin">
+                <button id="boutonClic">
+                    <img src="Images\pumpkin_bouton.png" alt="pumpkin">
+                </button>
             </div>
             <div class="counter">
                 <div class="second-counter">
@@ -54,38 +59,40 @@
 <!-- c'est ici qu'on met les cartes en JS -->
 
             </div>
- 
+
         </section>
     </main>
-<!-- Pied de Page avec les differents réseaux -->
-    
+    <!-- Pied de Page avec les differents réseaux -->
 
 
-<footer class = "footer">
-        <div class = "social">
-            <div class = "discord">
+
+    <footer class="footer">
+        <div class="social">
+            <div class="discord">
                 <img src="Images\logo_discord.png" alt="logo discord">
-                <a href="https://discordapp.com/channels/1154069519287992350/1154069571649667133" target = "_blank">discord</a>    
+                <a href="https://discordapp.com/channels/1154069519287992350/1154069571649667133"
+                    target="_blank">discord</a>
             </div>
-            <div class = "twitter">
+            <div class="twitter">
                 <img src="Images\logo_twitter.png" alt="logo twitter">
-                <a class = "twitter" href="https://twitter.com/SpookyClicker" target = "_blank">twitter</a>
+                <a class="twitter" href="https://twitter.com/SpookyClicker" target="_blank">twitter</a>
             </div>
-            <div class = "tumblr">
+            <div class="tumblr">
                 <img src="Images\logo_tumblr.png" alt="logo tumblr">
-                <a class = "tumblr" href="#">tumblr</a>
+                <a class="tumblr" href="#">tumblr</a>
             </div>
         </div>
-        <div class = "society">
+        <div class="society">
             <img src="Images\WCS logo.jpg" alt="logo WCS">
-            <a class = "wcs" href="https://www.wildcodeschool.com/fr-fr/" target = "_blank">Wild Code School</a>
+            <a class="wcs" href="https://www.wildcodeschool.com/fr-fr/" target="_blank">Wild Code School</a>
         </div>
-        <div class = "logo">
-                <img src="Images\pumpkin_logo.png" alt="Pumpkin logo">
-            </div>
-
+        <div class="logo">
+            <img src="Images\pumpkin_logo.png" alt="Pumpkin logo">
+        </div>
     </footer>
+    <script src="JS\script.js"></script>
 
     <script src="JS/index.js"></script>
 </body>
+
 </html>
