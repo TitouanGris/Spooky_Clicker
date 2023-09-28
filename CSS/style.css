@@ -39,7 +39,6 @@ nav{
     width: 100px;
     margin-right: 70%;
     position: relative;
-    
  
  }
 .navbar li a:hover{
@@ -49,7 +48,7 @@ background-color: white;
     margin-right:3%;
 }
 .picture-background{
-    background-image: url(https://media.discordapp.net/attachments/1154069571649667133/1156528901447753738/Capture_decran_2023-09-27_a_11.52.22.png?ex=6515f5b9&is=6514a439&hm=60dd1c899c921ebee69b14c227f320355b07ba9118a9698e730fc6cbebe1ea44&=&width=1438&height=534);
+    background-image: url("../Images/background.png");
     background-position: center;
     background-size: cover;
     position: relative;
@@ -64,9 +63,9 @@ background-color: white;
     padding-left: 40px;
   }
 .picture-click img{
-    height:25em;
-    margin-top: 20px;
-    padding: 150px;
+    height:40em;
+    margin-top: 5px;
+    padding: 5em;
   }
 
 .top-body{
@@ -234,21 +233,32 @@ p.level_number{
     justify-content: space-between;
     background-color: #111c26;
     color: white;
-    height: 25px;
+    height: 30px;
 
 }
 
-.footer a {
+.footer .social a {
 
+    display: flex;
     text-decoration: none;
     color: white;
+    align-items: center;
 
 }
 
 .footer .society {
 
     width: 33%;
-    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+}
+
+.footer .society .wcs {
+
+    text-decoration: none;
+    color: white;
 
 }
 
@@ -258,6 +268,7 @@ p.level_number{
     padding-left: 8px;
     display: flex;
     justify-content: start;
+    align-items: center;
     padding-left: 8px;
 }
 
@@ -272,26 +283,13 @@ p.level_number{
 
 .social img {
 
+    display: flex;
     padding-right: 4px;
     padding-left: 8px;
 
 }
-
-.discord{
-
-    display: flex;
-    align-content: center;
-
-}
-
-.twitter{
+.tumblr, .twitter, .discord {
 
     display: flex;
-    align-content: center;
-}
 
-.tumblr{
-
-    display: flex;
-    align-content: center;  
 }
