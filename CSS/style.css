@@ -252,13 +252,13 @@ p.level_number{
     width: 100%;
     border-left: 8px;
     border-right: 8px;
+    position: fixed;
     bottom:0;
     display: flex;
     justify-content: space-between;
     background-color: #111c26;
     color: white;
-    height: 30px;
-    margin-top: auto;
+    height: 25px;
 
 }
 
@@ -274,47 +274,59 @@ p.level_number{
 .footer .society {
 
     width: 33%;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-
-}
-
-.footer .society .wcs {
-
-    text-decoration: none;
-    color: white;
+    text-align: center;
 
 }
 
 .social {
 
-    width: 33%;
+    width: 33vw;
     padding-left: 8px;
     display: flex;
     justify-content: start;
-    align-items: center;
-    padding-left: 8px;
 }
 
 .footer .logo {
 
-    width: 33%;
+    width: 33vw;
     padding-right: 8px;
     display: flex;
     justify-content: end;
 
 }
 
-.social img {
+.footer .logo .logoImage {
 
+    width: 5%;
+    height: 5%;
     display: flex;
+    align-items: center;
+    
+}
+
+.society img{
+
+    width: 20px;
+    height: 20px;
     padding-right: 4px;
-    padding-left: 8px;
 
 }
-.tumblr, .twitter, .discord {
+
+.discord{
 
     display: flex;
+    align-content: center;
 
+}
+
+.twitter{
+
+    display: flex;
+    align-content: center;
+}
+
+.tumblr{
+
+    display: flex;
+    align-content: center;  
 }
