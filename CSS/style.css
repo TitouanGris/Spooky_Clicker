@@ -61,7 +61,10 @@ background-color: white;
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    padding-left: 40px;
+  }
+
+  .compteur-container{
+    
   }
 
 .picture-click img{
