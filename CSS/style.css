@@ -74,10 +74,6 @@ nav{
     align-items: center;
   }
 
-  .compteur-container{
-    
-  }
-
 .picture-click img{
     height:35em;
     padding: 1em;
@@ -89,8 +85,7 @@ nav{
     width: 100%;
     border: none;
     border-radius: 100%;
-    clip-path: polygon(76% 92%, 81% 89%, 85% 86%, 90% 82%, 93% 78%, 95% 73%, 96% 69%, 98% 64%, 98% 58%, 98% 54%, 98% 49%, 97% 44%, 96% 40%, 95% 34%, 92% 29%, 89% 25%, 85% 22%, 79% 19%, 74% 18%, 68% 16%, 62% 16%, 57% 14%, 52% 11%, 50% 5%, 48% 0%, 43% 0%, 38% 0%, 35% 5%, 36% 10%, 38% 14%, 34% 17%, 27% 18%, 21% 20%, 15% 21%, 11% 27%, 5% 32%, 4% 38%, 2% 45%, 2% 51%, 2% 59%, 2% 65%, 3% 71%, 6% 76%, 8% 82%, 13% 85%, 17% 88%, 22% 90%, 26% 92%, 32% 94%, 37% 94%, 42% 97%, 47% 99%, 53% 98%, 60% 98%, 56% 96%, 64% 95%, 69% 94%, 74% 94%);
-
+    clip-path: polygon(71% 95%, 78% 91%, 86% 88%, 91% 83%, 95% 78%, 98% 70%, 98% 62%, 99% 54%, 98% 45%, 97% 36%, 94% 29%, 91% 23%, 83% 15%, 76% 14%, 66% 9%, 56% 5%, 48% 1%, 36% 0%, 30% 6%, 21% 13%, 11% 18%, 5% 26%, 1% 35%, 0% 43%, 0% 53%, 0% 65%, 0% 76%, 5% 84%, 9% 91%, 14% 95%, 21% 100%, 32% 100%, 42% 100%, 50% 100%, 58% 100%, 64% 99%);
 }
 
 .top-body{
@@ -112,6 +107,13 @@ nav{
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
 }
+
+.compteur-container{
+
+    width: 33vw;
+
+}
+
   body{
     background-color: var(--background-color);
     min-height: 100vh;
@@ -277,6 +279,7 @@ p.level_number{
     width: 100%;
     border-left: 8px;
     border-right: 8px;
+    bottom: 0;
     display: flex;
     justify-content: space-between;
     background-color: var(--deep-blue);
@@ -439,3 +442,30 @@ p.level_number{
   opacity: 1;
   pointer-events: none;
 }
+
+/*Animation citrouille clickable*/
+
+  #boutonImage{
+    display: inline-block;
+    box-shadow: none;
+    appearance: none;
+    border: 0;
+    outline: 0;
+    height: 45px;
+    line-height: 42px;
+    padding: 0 30px;
+    font-size: 20px;
+    border-radius: 30px;
+    color: rgb(40, 45, 50);
+    cursor: pointer;
+    transition: all .5s;
+    transition-timing-function: cubic-bezier(.2, 3, .4, 1);
+    user-select: none;
+    height: 300px;
+    &:hover{
+      transform: scale(1.02, 1.02);
+    }
+    &:active{
+      transform: scale(1.05, 1.05);
+    }
+  }
