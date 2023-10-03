@@ -35,12 +35,3 @@ function modaleclose2() {
     const el = document.getElementById("contact");
     el.style.display = "none";
 }
-
-
-
-
-
-
-
-
-
