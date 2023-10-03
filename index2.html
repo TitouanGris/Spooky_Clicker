@@ -1,95 +1,149 @@
+
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style2.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- Mettre meta pour informations site web et référencement -->
     <title>Spooky Clicker</title>
- 
-</head>
-<body>
-    <div class="hero">
 
-        <div class="snow">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1536" preserveAspectRatio="xMidYMax slice">
-            <g fill="#FFF" fill-opacity=".15" transform="translate(55 42)">
-             <g id="snow-bottom-layer">
-              <ellipse cx="6" cy="1009.5" rx="6" ry="5.5"/>
-              <ellipse cx="138" cy="1110.5" rx="6" ry="5.5"/>
-              <ellipse cx="398" cy="1055.5" rx="6" ry="5.5"/>
-              <ellipse cx="719" cy="1284.5" rx="6" ry="5.5"/>
-              <ellipse cx="760" cy="1155.5" rx="6" ry="5.5"/>
-              <ellipse cx="635" cy="1459.5" rx="6" ry="5.5"/>
-              <ellipse cx="478" cy="1335.5" rx="6" ry="5.5"/>
-              <ellipse cx="322" cy="1414.5" rx="6" ry="5.5"/>
-              <ellipse cx="247" cy="1234.5" rx="6" ry="5.5"/>
-              <ellipse cx="154" cy="1425.5" rx="6" ry="5.5"/>
-              <ellipse cx="731" cy="773.5" rx="6" ry="5.5"/>
-              <ellipse cx="599" cy="874.5" rx="6" ry="5.5"/>
-              <ellipse cx="339" cy="819.5" rx="6" ry="5.5"/>
-              <ellipse cx="239" cy="1004.5" rx="6" ry="5.5"/>
-              <ellipse cx="113" cy="863.5" rx="6" ry="5.5"/>
-              <ellipse cx="102" cy="1223.5" rx="6" ry="5.5"/>
-              <ellipse cx="395" cy="1155.5" rx="6" ry="5.5"/>
-              <ellipse cx="826" cy="943.5" rx="6" ry="5.5"/>
-              <ellipse cx="626" cy="1054.5" rx="6" ry="5.5"/>
-              <ellipse cx="887" cy="1366.5" rx="6" ry="5.5"/>
-              <ellipse cx="6" cy="241.5" rx="6" ry="5.5"/>
-              <ellipse cx="138" cy="342.5" rx="6" ry="5.5"/>
-              <ellipse cx="398" cy="287.5" rx="6" ry="5.5"/>
-              <ellipse cx="719" cy="516.5" rx="6" ry="5.5"/>
-              <ellipse cx="760" cy="387.5" rx="6" ry="5.5"/>
-              <ellipse cx="635" cy="691.5" rx="6" ry="5.5"/>
-              <ellipse cx="478" cy="567.5" rx="6" ry="5.5"/>
-              <ellipse cx="322" cy="646.5" rx="6" ry="5.5"/>
-              <ellipse cx="247" cy="466.5" rx="6" ry="5.5"/>
-              <ellipse cx="154" cy="657.5" rx="6" ry="5.5"/>
-              <ellipse cx="731" cy="5.5" rx="6" ry="5.5"/>
-              <ellipse cx="599" cy="106.5" rx="6" ry="5.5"/>
-              <ellipse cx="339" cy="51.5" rx="6" ry="5.5"/>
-              <ellipse cx="239" cy="236.5" rx="6" ry="5.5"/>
-              <ellipse cx="113" cy="95.5" rx="6" ry="5.5"/>
-              <ellipse cx="102" cy="455.5" rx="6" ry="5.5"/>
-              <ellipse cx="395" cy="387.5" rx="6" ry="5.5"/>
-              <ellipse cx="826" cy="175.5" rx="6" ry="5.5"/>
-              <ellipse cx="626" cy="286.5" rx="6" ry="5.5"/>
-              <ellipse cx="887" cy="598.5" rx="6" ry="5.5"/>
-             </g>
-            </g>
-            <g fill="#FFF" fill-opacity=".3" transform="translate(65 63)">
-             <g id="snow-top-layer">
-              <circle cx="8" cy="776" r="8"/>
-              <circle cx="189" cy="925" r="8"/>
-              <circle cx="548" cy="844" r="8"/>
-              <circle cx="685" cy="1115" r="8"/>
-              <circle cx="858" cy="909" r="8"/>
-              <circle cx="874" cy="1438" r="8" transform="rotate(180 874 1438)"/>
-              <circle cx="657" cy="1256" r="8" transform="rotate(180 657 1256)"/>
-              <circle cx="443" cy="1372" r="8" transform="rotate(180 443 1372)"/>
-              <circle cx="339" cy="1107" r="8" transform="rotate(180 339 1107)"/>
-              <circle cx="24" cy="1305" r="8" transform="rotate(180 24 1305)"/>
-              <circle cx="8" cy="8" r="8"/>
-              <circle cx="189" cy="157" r="8"/>
-              <circle cx="548" cy="76" r="8"/>
-              <circle cx="685" cy="347" r="8"/>
-              <circle cx="858" cy="141" r="8"/>
-              <circle cx="874" cy="670" r="8" transform="rotate(180 874 670)"/>
-              <circle cx="657" cy="488" r="8" transform="rotate(180 657 488)"/>
-              <circle cx="443" cy="604" r="8" transform="rotate(180 443 604)"/>
-              <circle cx="339" cy="339" r="8" transform="rotate(180 339 339)"/>
-              <circle cx="24" cy="537" r="8" transform="rotate(180 24 537)"/>
-             </g>
-            </g>
-        </svg>
-        </div>
-      
-      <div class="hero__content">
+</head>
+
+<body>
     <div id="transition_page" class=" transition active"></div> <!--transition page 1 2-->
-   <a href="index.html"><button class='glowing-btn'><span class='glowing-txt'>SPOO<span class='faulty-letter'>KY  CL</span>ICKER</span></button></a>  
-   <script src="JS/fondu.js"></script>
+
+    <header>
+        <!-- Barre de naviguation avec règles, shop et logo -->
+        <nav>
+
+            <img class="logo-titles" src="Images\logov2.png" alt="spookie clicker">
+            <ul class="navbar">
+<!-- bouttons MODALE-->
+                <li class="rules"><button class="modaleButton" onclick="modaleopen()">Rules</button></li>
+                <li class="contact"><button class="modaleButton" onclick="modaleopen2()">Contact</button></li>
+            </ul>
+            <div class="picture-logo">
+            </div>
+
+        </nav>
+    </header>
+    <!-- PARTIE PRINCIPALE DE LA PAGE -->
+    <section class="top-body">
+        <div class="picture-background">
+            <div class="first-counter">
+                <p class = "compteur-container">
+                    <span id="nombreClics">0</span> Pumplick
+                </p>
+            </div>
+            <div class="picture-click" img>
+                <button id="boutonClic">
+                    <img id="boutonImage" src="Images\pumpkin_bouton.png" alt="pumpkin">
+                </button>
+            </div>
+            <div class="counter">
+                <div class="second-counter">
+                    <p class = "compteur-container"><span id="pumpkinPerClicks">0</span> PUMPKIN P/CLICK</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main>
+        <section class="shop">
+            <div id="shop_title">
+                <p>SHOP</p>
+            </div>
+            <div id="shop_boosters">
+                
+<!-- c'est ici qu'on met les cartes en JS -->
+
+            </div>
+
+        </section>
+    </main>
+    <!-- Pied de Page avec les differents réseaux -->
+
+
+
+    <footer class="footer">
+        <div class="social">
+            <div class="discord">
+                <img src="Images\logo_discord.png" alt="logo discord">
+                <a href="https://discordapp.com/channels/1154069519287992350/1154069571649667133"
+                target = "_blank">discord</a>
+            </div>
+            <div class="twitter">
+                <img src="Images\logo_twitter.png" alt="logo twitter">
+                <a class="twitter" href="https://twitter.com/SpookyClicker" target = "_blank">twitter</a>
+            </div>
+            <div class="tumblr">
+                <img src="Images\logo_tumblr.png" alt="logo tumblr">
+                <a class="tumblr" href="#">tumblr</a>
+            </div>
+        </div>
+        <div class="society">
+            <img src="Images\logoWild.png" alt="logo WCS">
+            <a class="wcs" href="https://www.wildcodeschool.com/fr-fr/" target = "_blank">Wild Code School</a>
+        </div>
+        <div class="logo">
+            <img src="Images\pumpkin_logo.png" alt="Pumpkin logo">
+        </div>
+    </footer>
+
+
+ <!-- Partie Règles HTML MODALE-->
+
+ <div id="rules">
+    <button class="btn-close" onclick="modaleclose()"> Close</button>
+    <h3>Rules</H3>
+    <p>
+    <ul>
+        <li>Prepare as many Pumpkin as possible by clicking or touching the giant Pumpkin as quickly as possible.
+        </li>
+        <li>s soon as you have enough Pumpkin, go to the store and use them to buy upgrades and scream even more
+        </li>
+        <li>The principle of its game, entirely browser-based (meaning it requires nothing other than your internet
+            browser to play), is to produce Pumpkin... infinitely !</li>
+    </ul>
+    </p>
+</div>
+
+
+<!-- Partie contactez-nous HTML MODALE-->
+
+<div id="contact">
+    <button class="btn-close" onclick="modaleclose2()"> Close</button>
+    <h3>Contact us</h3>
+    <form class="contenu">
+        <h2>Leave your message</h2>
+        <div>
+            <label for="name">Name</label>
+            <br>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <br>
+            <input type="email" id="email">
+        </div>
+        <div>
+            <label for="message">Message</label>
+            <br>
+            <textarea id="message" rows="10"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+
+    <script src="JS/script.js"></script>
+    <script src="JS/index.js"></script>
+    <script src="JS/fondu.js"></script>
+    <script src="JS/citrouille.js"></script>
 </body>
+
 </html>
