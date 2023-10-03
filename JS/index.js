@@ -1,5 +1,5 @@
 function createCard(booster, booster_price, booster_click, booster_level) {
-    return `
+  return `
 
 <div class="shop_item" id="${booster}" onclick="booster(['${booster}', ${booster_price}, ${booster_click}])">
     <div class="shop_item_content">
@@ -26,50 +26,50 @@ function createCard(booster, booster_price, booster_click, booster_level) {
 
 
 const boosterToAdd = [
-    {
-      booster_name: "Zombie",
-      booster_price: 20,
-      booster_click: 1.2,
-      booster_level: 0,
-    },
-    
-    {
-      booster_name: "Catacomb",
-      booster_price: 500,
-      booster_click: 2.0,
-      booster_level: 0,
-    },
-    
-    {
-      booster_name: "Manor",
-      booster_price: 100,
-      booster_click: 1.5,
-      booster_level: 0,
-    },
-    
-    {
-      booster_name: "Ghost",
-      booster_price: 1000,
-      booster_click: 2.2,
-      booster_level: 0,
-    },
-    
-    {
-      booster_name: "Graveyard",
-      booster_price: 250,
-      booster_click: 1.8,
-      booster_level: 0,
-    },
-    
-    {
-      booster_name: "Devil",
-      booster_price: 5000,
-      booster_click: 2.5,
-      booster_level: 3,
-    },
-    
-  ];
-  
+  {
+    booster_name: "Zombie",
+    booster_price: 20,
+    booster_click: 1.2,
+    booster_level: 0,
+  },
+
+  {
+    booster_name: "Catacomb",
+    booster_price: 500,
+    booster_click: 2.0,
+    booster_level: 0,
+  },
+
+  {
+    booster_name: "Manor",
+    booster_price: 100,
+    booster_click: 1.5,
+    booster_level: 0,
+  },
+
+  {
+    booster_name: "Ghost",
+    booster_price: 1000,
+    booster_click: 2.2,
+    booster_level: 0,
+  },
+
+  {
+    booster_name: "Graveyard",
+    booster_price: 250,
+    booster_click: 1.8,
+    booster_level: 0,
+  },
+
+  {
+    booster_name: "Devil",
+    booster_price: 5000,
+    booster_click: 2.5,
+    booster_level: 3,
+  },
+
+];
+
 
 const cards = document.querySelector("#shop_boosters");
 
@@ -78,30 +78,35 @@ let baseLevel = 0;
 let levelUp = 1;
 
 function booster(boost) {
-  pumpkinPerClicks += boost[2]
-  document.getElementById("pumpkinPerClicks").textContent = pumpkinPerClicks.toFixed(1);
+  if (nombreClics < boost[1]) {
+    return alert("Click me more AHAHAH !")
+  }
+  else {
+    pumpkinPerClicks += boost[2]
+    document.getElementById("pumpkinPerClicks").textContent = pumpkinPerClicks.toFixed(1);
 
-  nombreClics = nombreClics - boost[1]
+    nombreClics = nombreClics - boost[1]
     document.getElementById("nombreClics").textContent = nombreClics.toFixed(1);
 
-  baseLevel += levelUp;
-  document.querySelector(`#${boost[0]} .level .level_number`).textContent++;
+    baseLevel += levelUp;
+    document.querySelector(`#${boost[0]} .level .level_number`).textContent++;
+  }
 }
 
 const generateBooster = () => {
   cards.innerHTML = "";
   for (let i = 0; i < boosterToAdd.length; i++) {
- 
-          const html = createCard(
-            boosterToAdd[i].booster_name,
-            boosterToAdd[i].booster_price,
-            boosterToAdd[i].booster_click,
-            boosterToAdd[i].booster_level,
-          );
 
-          cards.innerHTML += html;
-        }
-      };
+    const html = createCard(
+      boosterToAdd[i].booster_name,
+      boosterToAdd[i].booster_price,
+      boosterToAdd[i].booster_click,
+      boosterToAdd[i].booster_level,
+    );
+
+    cards.innerHTML += html;
+  }
+};
 
 
 generateBooster();

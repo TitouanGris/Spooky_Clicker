@@ -308,8 +308,9 @@ p.level_number{
 .footer .society {
 
     width: 33%;
-
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -317,6 +318,7 @@ p.level_number{
 
     text-decoration: none;
     color: white;
+    align-items: center;
 
 }
 
@@ -340,8 +342,6 @@ p.level_number{
 
 .society img{
 
-    width: 20px;
-    height: 20px;
     padding-right: 4px;
 
 }
