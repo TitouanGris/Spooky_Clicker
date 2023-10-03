@@ -1,13 +1,17 @@
 
 //Compteur de clics
 let nombreClics = 0;
+let pumpkinPerClicks = 1;
 
 function comptage() {
-    nombreClics++;
-    document.getElementById("nombreClics").textContent = nombreClics;
+    nombreClics += pumpkinPerClicks;
+    document.getElementById("nombreClics").textContent = nombreClics.toFixed(1);
 }
 
 document.getElementById("boutonClic").addEventListener("click", comptage);
+
+
+
 
 
 

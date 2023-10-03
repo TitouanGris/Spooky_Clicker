@@ -1,13 +1,13 @@
-function createCard(booster_name, booster_price, booster_click, booster_level) {
+function createCard(booster, booster_price, booster_click, booster_level) {
     return `
 
-<div class="shop_item">
+<div class="shop_item" id="${booster}" onclick="booster(['${booster}', ${booster_price}, ${booster_click}])">
     <div class="shop_item_content">
         <div class="booster_name">
-            <img src="Images/${booster_name}.png" class="shop_img">
-            <p>${booster_name.toUpperCase()}</p>
+            <img src="Images/${booster}.png" class="shop_img">
+            <p>${booster.toUpperCase()}</p>
         </div>
-        <div  class="price">
+        <div class="price">
             <p>${booster_price}x</p>
             <img src="Images/pumpkin.png" class="price_icon">
         </div>
@@ -73,15 +73,30 @@ const boosterToAdd = [
 
 const cards = document.querySelector("#shop_boosters");
 
+
+let baseLevel = 0;
+let levelUp = 1;
+
+function booster(boost) {
+  pumpkinPerClicks += boost[2]
+  document.getElementById("pumpkinPerClicks").textContent = pumpkinPerClicks.toFixed(1);
+
+  nombreClics = nombreClics - boost[1]
+    document.getElementById("nombreClics").textContent = nombreClics.toFixed(1);
+
+  baseLevel += levelUp;
+  document.querySelector(`#${boost[0]} .level .level_number`).textContent++;
+}
+
 const generateBooster = () => {
   cards.innerHTML = "";
   for (let i = 0; i < boosterToAdd.length; i++) {
-
+ 
           const html = createCard(
             boosterToAdd[i].booster_name,
             boosterToAdd[i].booster_price,
             boosterToAdd[i].booster_click,
-            boosterToAdd[i].booster_level
+            boosterToAdd[i].booster_level,
           );
 
           cards.innerHTML += html;
@@ -90,3 +105,7 @@ const generateBooster = () => {
 
 
 generateBooster();
+
+
+
+
