@@ -164,6 +164,11 @@ main {
     border-radius: 10px;
     box-shadow: 5px 5px 18px 5px #0b0b0b;
     margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.shop_item:hover {
+    background-color: #354c62;
 }
 .shop_item_content{
     display: flex;
@@ -518,4 +523,3 @@ h3 {
       transform: scale(1.05, 1.05);
     }
   }
->>>>>>> 25c2643197304432a61b11adbb56f65e42832b9b
