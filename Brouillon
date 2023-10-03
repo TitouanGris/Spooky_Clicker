@@ -1,0 +1,53 @@
+// brouillon //
+
+
+// /!\ il faut trouver un moyen d'appliquer le coeff booster_click à la variable nombreClics //
+
+/*
+
+Ajout de variables dans les cards boosterToAdd: 
+
+    - coeffShop = 1,10
+    - coeffClic = 1,25
+    - coeffInflationShop = 1,2
+    - coeffInflationClick = 1,5
+
+-- Quand on clique sur un bouton du shop :
+
+- si pas assez de pumpclick --> Affiche le message "click me more AHAHAH"
+
+- si assez de pumpclick:
+
+    - pumpclick = pumpclick actuel - prix du shop
+    - prix du shop = prix actuel * coeff du shop
+    - coeff du shop = coeff actuel * coeff inflationShop
+    - pumpkin / click = (pumpkin / click) * coeff pumpclick
+    - coeff pumpclick = coeff actuel * coeff inflationClic
+    - Level = Level actuel + 1
+
+*/
+
+//--Code JavaScript--//
+
+function shopClick() {
+
+    if (nombreClics < booster_price) {
+
+        return alert("Click me more AHAHAH !")
+
+    }
+
+    else {
+
+        nombreClics -= booster_price
+        booster_price *= coeffShop
+        coeffShop *= coeffInflationShop
+        booster_click *= coeffPumpclick
+        coeffPumpclick *= coeffInflationPumpclick
+        level++
+        
+    }
+
+}
+
+document.getElementById(".shop_item_content").addEventListener("click", shopClick);
