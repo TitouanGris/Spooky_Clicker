@@ -14,6 +14,7 @@
     --transparent-background: rgba(0, 0, 0, 0.165);
 }
 
+/*Barre de naviguation*/
 nav{
     background-color: var(--background-color);
     padding: 5px;
@@ -59,6 +60,9 @@ nav{
 .rules{
     margin-right:3%;
 }
+
+/*Partie citrouille et compteurs*/
+
 .picture-background{
     background-image: url("../Images/background.png");
     background-position: center;
@@ -79,7 +83,7 @@ nav{
     padding: 1em;
   }
 
-#boutonClic{
+  #boutonClic{
 
     background-color: transparent;
     width: 100%;
@@ -92,7 +96,7 @@ nav{
     color: var(--text-color);
 }
 .first-counter p{
-    background-color: var(--transparent-background);
+    
     border-radius: 15px;
     padding: 20px;
     font-size: xx-large;
@@ -100,12 +104,23 @@ nav{
     font-family: 'Roboto', sans-serif;
 }
 .second-counter{
-    background-color: var(--transparent-background);
+    
     padding: 20px;
     border-radius: 15px;
     font-size: xx-large;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
+}
+
+@media (min-width: 731px){
+.second-counter{
+    background-color: var(--transparent-background);
+
+}
+.first-counter p{
+    background-color: var(--transparent-background);
+}
+
 }
 
 .compteur-container{
@@ -126,6 +141,9 @@ main {
     justify-content: center;
 
 }
+
+/*Partie SHOP*/
+
 .shop {
     width : 90%;
     display: flex;
@@ -523,3 +541,40 @@ h3 {
       transform: scale(1.05, 1.05);
     }
   }
+
+/*Responsive citrouille et les deux compteurs*/
+
+@media (max-width: 730px) {
+    .first-counter p{
+        border-radius: 10px;
+        padding: 100px;
+        margin-top: 70px;
+        font-size: xx-large;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+        position: absolute;
+        color: #f27405;
+        text-shadow: #020101 2px 0 10px;
+    }
+
+    .second-counter{
+        border-radius: 15px;
+        font-size: xx-large;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;  
+        position: relative;
+        bottom: 220px;  
+        right: 380px;  
+        color: #f27405;
+        text-shadow: #020101 2px 0 10px;
+    }
+
+    .compteur-container{
+     position: absolute;
+     width: 400px;
+    }
+       
+    .top-body{
+        color: var(--text-color);
+    }
+}
