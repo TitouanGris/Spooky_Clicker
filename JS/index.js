@@ -4,7 +4,7 @@ function createCard(booster, booster_price, booster_click, booster_level) {
 <div class="shop_item" id="${booster}" onclick="booster(['${booster}', ${booster_price}, ${booster_click}])">
     <div class="shop_item_content">
         <div class="booster_name">
-            <img src="docs/assets/Images/${booster}.png" class="shop_img">
+            <img src="/docs/assets/Images/${booster}.png" class="shop_img">
             <p>${booster.toUpperCase()}</p>
         </div>
         <div class="price">
