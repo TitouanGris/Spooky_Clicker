@@ -10,11 +10,6 @@ function comptage() {
 
 document.getElementById("boutonClic").addEventListener("click", comptage);
 
-
-
-
-
-
 //Script MODALES
 function modaleopen() {
     const el = document.getElementById("rules");
