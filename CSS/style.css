@@ -534,7 +534,7 @@ h3 {
 }
 
 @media (max-width: 1000px) {
-    .shop {
+    #shop {
         display: flex;
         flex-direction: column;
         gap: 2%;
@@ -701,16 +701,23 @@ h3 {
 
 @media (max-width: 460px) {
 
+    body{
+        overflow-x: hidden;
+    }
+
     #shop {
         height: 100vh;
         align-items: center;
-        transform: translateY(-100%) translateX(-100%);
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
         background: linear-gradient(0deg, rgba(239,218,198,0) 0%, rgba(239,218,198,1) 24%, rgba(239,218,198,1) 100%);
         transition: 0.5s;
     }
 
     #shop.visible {
-        transform: translateY(-100%);
+        transform: translateX(0%);
      }
     
 
