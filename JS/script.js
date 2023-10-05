@@ -33,6 +33,6 @@ function modaleclose2() {
 function noRefresh(e) {
     e.preventDefault()
 
-    alert("pouet")
+    alert("Thank you for you're message !, Spooky clicker team")
     modaleclose2()
 }
