@@ -65,7 +65,7 @@ const boosterToAdd = [
     booster_name: "Devil",
     booster_price: 5000,
     booster_click: 2.5,
-    booster_level: 3,
+    booster_level: 0,
   },
 
 ];
