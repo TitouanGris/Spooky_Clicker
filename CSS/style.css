@@ -66,7 +66,7 @@ nav {
 /*Partie citrouille et compteurs*/
 
 .picture-background {
-    background-image: url("/docs/assets/Images/background.png");
+    background-image: url("docs/assets/Images/background.png");
     display: flex;
     justify-content: space-around;
     align-items: center;
