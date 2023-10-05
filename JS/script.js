@@ -30,3 +30,9 @@ function modaleclose2() {
     const el = document.getElementById("contact");
     el.style.display = "none";
 }
+function noRefresh(e) {
+    e.preventDefault()
+
+    alert("pouet")
+    modaleclose2()
+}
