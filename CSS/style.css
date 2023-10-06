@@ -201,7 +201,7 @@ main {
     gap: 5px;
     align-items: center;
     color: var(--text-color);
-    font-size: clamp(1rem, 1.5vw, 1.4rem);
+    font-size: clamp(0.3rem, 1vw, 1rem);
     font-weight: bold;
 }
 
@@ -215,7 +215,7 @@ main {
 
 .price p {
     padding-right: 5px;
-    font-size: clamp(1.5rem, 2.5vw, 1.8rem);
+    font-size: clamp(0.3rem, 2vw, 1.5rem);
     color: var(--primary-color);
     font-weight: bold;
 }
@@ -235,7 +235,7 @@ p.click_booster_copy {
 }
 
 .click_booster_number {
-    font-size: clamp(1.5rem, 2.5vw, 1.8rem);
+    font-size: clamp(0.3rem, 2vw, 1.5rem);
     padding-left: 10px;
     text-align: center;
     color: var(--light-orange);
@@ -259,7 +259,7 @@ p.level_text {
 }
 
 p.level_number {
-    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-size: clamp(0.5rem, 2vw, 1.5rem);
     color: var(--deep-orange);
     font-weight: bold;
 }
