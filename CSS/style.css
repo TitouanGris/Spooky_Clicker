@@ -89,6 +89,7 @@ nav {
     width: 100vw;
     padding: 5vh 0 5vh 0;
     overflow: hidden;
+    z-index: 0;
 }
 
 #boutonClic {
