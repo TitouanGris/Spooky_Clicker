@@ -1,98 +1,65 @@
-//Animation citrouille clickable//
-
-var ctx = c.getContext('2d');
-var btn = document.getElementById('boutonImage')[0];
-c.width = window.innerWidth;
-c.height = window.innerHeight;
-var mouseX = c.width / 2;
-var mouseY = c.height / 2;
-var txtPosition = 0;
-var particles = [];
-btn.addEventListener('mouseup', function(e){
-  mouseX = e.clientX;
-  mouseY = e.clientY;
-  createParticles();
-  changeText();
-});
-setTimeout(function(){
-  createParticles();
-}, 250);
-draw();
-function draw(){
-  drawBg();
-  incParticles();
-  drawParticles();
-  window.requestAnimationFrame(draw);
-}
-function drawBg(){
-  ctx.rect(0, 0, c.width, c.height);
-  ctx.fillStyle = "rgb(67, 36, 57)";
-  ctx.fill();
-}
-function drawParticles(){
-  for(i = 0; i < particles.length; i++){
-    ctx.beginPath();
-    ctx.arc(particles[i].x,
-           particles[i].y,
-           particles[i].size,
-           0,
-           Math.PI * 2);
-    ctx.fillStyle = particles[i].color;
-    ctx.closePath();
-    ctx.fill();
+const div = document.getElementById("canvas")
+let global = 0
+const citrouille = document.getElementById("boutonClic")
+citrouille.addEventListener("click", () => {
+  generateStars()
+})
+function generateStars() {
+for(let i = 0; i < 10; i++) {
+    const top = 50 + genVector()
+    const left = 50 + genVector()
+    const star = document.createElement("div")
+    star.style.width = genSize()+"px"
+    star.style.aspectRatio = "1/1"
+    star.style.borderRadius = "50%"
+    star.style.backgroundColor = `rgb(${Math.random()*255}, ${Math.random()*255}, ${Math.random()*255})`
+    star.style.position = "absolute"
+    star.style.top = top+"%"
+    star.style.left = left+"%"
+    star.classList.add(`star${global}`)
+    div.append(star)
   }
+  let myStars = global
+  global++
+  const interval = setInterval(() => {
+    const stars = document.querySelectorAll(`.star${myStars}`)
+    stars.forEach((star) => {
+      let top = star.style.top.split("%")[0]
+      let left = star.style.left.split("%")[0]
+      let resultTop = 50 - parseFloat(top)
+      let resultLeft = 50 - parseFloat(left)
+      if(resultTop > 0) {
+        let finalTop = parseFloat(top) - parseFloat(resultTop) * 0.01
+        star.style.top = finalTop+"%"
+      } else {
+        let finalTop = parseFloat(top) - parseFloat(resultTop) * 0.01
+        star.style.top = finalTop+"%"
+      }
+      if(resultLeft > 0){
+        let finalLeft = parseFloat(left) - parseFloat(resultLeft) * 0.01
+        star.style.left = finalLeft+"%"
+      } else {
+        let finalLeft = parseFloat(left) - parseFloat(resultLeft) * 0.01
+        star.style.left = finalLeft+"%"
+      }
+    })
+  }, 1)
+  setTimeout(() => {
+    const stars = document.querySelectorAll(`.star${myStars}`)
+    clearInterval(interval)
+    stars.forEach((star) => {
+      star.remove()
+    })
+  }, 5000)
 }
-function incParticles(){
-  for(i = 0; i < particles.length; i++){
-    particles[i].x += particles[i].velX;
-    particles[i].y += particles[i].velY;
-    particles[i].size = Math.max(0, (particles[i].size - .05));
-    if(particles[i].size === 0){
-      particles.splice(i, 1);
-    }
-  }
+function genSize(){
+  return Math.random()*20
 }
-function createParticles(){
-  for(i = 0; i < 30; i++){
-    particles.push({
-      x: mouseX,
-      y: mouseY,
-      size: parseInt(Math.random() * 20),
-      color: 'rgb(' + ranRgb() + ')',
-      velX: ranVel(),
-      velY: ranVel()
-    });
-  }
-}
-function ranRgb(){
-  var colors = [
-    '255, 140, 0',
-    '67, 78, 45',
-    '0, 0, 0',
-    '0, 128, 0',
-  ];
-  var i = parseInt(Math.random() * 10);
-  return colors[i];
-}
-function ranVel(){
-  var vel = 0;
-  if(Math.random() < 0.5){
-    vel = Math.abs(Math.random());
+function genVector() {
+  const random = Math.random()
+  if(random < 0.5) {
+    return Math.abs(Math.random())
   } else {
-    vel = -Math.abs(Math.random());
+   return -Math.random()
   }
-  return vel;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

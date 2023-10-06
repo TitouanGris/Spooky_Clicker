@@ -90,19 +90,12 @@ function booster(boost) {
     nombreClics -= boost[1]
     document.getElementById("nombreClics").textContent = nombreClics.toFixed(1);
 
-
-    /* Si je clique sur un item du shop, Je filtre le tableau pour mettre a l'exposant x le booster price et le booster click concerné */
-    /* Je filtre le tableau pour récupérer */
-
     for (const item of boosterToAdd) {
       if(item.booster_name === boost[0]){
         item.booster_level++
         item.booster_price = (item.booster_price ** 1.33).toFixed(1)
       }
-      
     }
-
-
     generateBooster()
   }
 }

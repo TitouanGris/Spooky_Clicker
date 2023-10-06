@@ -19,6 +19,14 @@ html, body, :root {
     --transparent-background: rgba(0, 0, 0, 0.165);
 }
 
+#canvas {
+    width: 30vw;
+    aspect-ratio: 1/1;
+    background-color: transparent;
+    position: relative;
+    border-radius: 50%;
+  }
+
 /*Barre de naviguation*/
 nav {
     background-color: var(--deep-blue);
@@ -78,11 +86,13 @@ nav {
     background-size: cover;
     width: 100vw;
     padding: 5vh 0 5vh 0;
-
+    overflow: hidden;
 }
 
 #boutonClic {
     border-radius: 100%;
+    position: absolute;
+    z-index: 1;
     clip-path: polygon(71% 95%, 78% 91%, 86% 88%, 91% 83%, 95% 78%, 98% 70%, 98% 62%, 99% 54%, 98% 45%, 97% 36%, 94% 29%, 91% 23%, 83% 15%, 76% 14%, 66% 9%, 56% 5%, 48% 1%, 36% 0%, 30% 6%, 21% 13%, 11% 18%, 5% 26%, 1% 35%, 0% 43%, 0% 53%, 0% 65%, 0% 76%, 5% 84%, 9% 91%, 14% 95%, 21% 100%, 32% 100%, 42% 100%, 50% 100%, 58% 100%, 64% 99%);
 }
 .top-body {
@@ -93,7 +103,7 @@ nav {
     width: 90%;
 }
 #boutonClic{
-    width: 25vw;
+    width: 20vw;
     background-color: transparent;
     border: none;
 }
