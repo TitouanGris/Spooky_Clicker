@@ -67,6 +67,7 @@ nav {
     margin-left: 5vw;
     position: absolute;
     transform: translateY(-15%);
+    z-index: 1;
 }
 
 .navbar li a:hover {
@@ -283,7 +284,7 @@ p.level_number {
 
 .float{
     background-color: var(--deep-orange);
-    z-index: 1;
+    z-index: 0;
 }
 
 .my-float{
@@ -503,7 +504,7 @@ h3 {
     width: 100%;
     height: 100%;
     background: #222222;
-    z-index: 1;
+    z-index: 0;
     opacity: 0;
     pointer-events: none;
     transition: ease-in 2s;
