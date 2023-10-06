@@ -835,6 +835,12 @@ h3 {
     #boutonClic{
         width: 70vw;
     }
+    .first-counter{
+        transform: translateY(-150%);
+    }
+    .second-counter{
+        transform: translateY(150%);
+    }
 }
 
 @media (max-width: 730px) {
