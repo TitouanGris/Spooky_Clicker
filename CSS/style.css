@@ -91,7 +91,7 @@ nav {
 
 .picture-background {
     margin-top: 50px;
-    background-image: url("/Spooky_Clicker/docs/assets/Images/background.png");
+    background-image: url("../docs/assets/Images/background.png");
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -384,7 +384,7 @@ i{
     height: 600px;
     top: 50%;
     left: 80%;
-    background-image: url(/Spooky_Clicker/docs/assets/Images/page.png);
+    background-image: url(../docs/assets/Images/page.png);
     background-size: 100%;
     background-repeat: no-repeat;
     padding: 120px;
@@ -401,7 +401,7 @@ i{
     margin: auto;
     top: 50%;
     left: 80%;
-    background-image: url(/Spooky_Clicker/docs/assets/Images/page.png);
+    background-image: url(../docs/assets/Images/page.png);
     background-size: 100%;
     background-repeat: no-repeat;
     padding: 80px;
